@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Brais Dominguez Puga y Luciano Yamil Martínez Castro-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="mercadona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ubicacion" maxOccurs="unbounded"/>
+        <xs:element ref="accionistas"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+<xs:element name="ubicacion">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="empleados"/>
+      <xs:element ref="proveedores"/>
+      <xs:element ref="clientes"/>
+    </xs:sequence>
+    <xs:attribute name="ciudad" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+  
+  
+  <xs:element name="empleados">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element name="director" type="xs:NMTOKENS"/>
+       <xs:element name="gerente" type="xs:NMTOKENS"/>
+       <xs:element name="almacenista" type="xs:NMTOKENS" maxOccurs="unbounded"/>
+       <xs:element name="comercial" type="xs:NMTOKENS" maxOccurs="unbounded"/>
+       <xs:element name="dependiente" type="xs:NMTOKENS" maxOccurs="unbounded"/>
+       <xs:element name="limpieza" type="xs:NMTOKENS"/>
+       <xs:element name="repartidor" type="xs:NMTOKENS" minOccurs="0"/>
+       <xs:element name="cocinero" type="xs:NMTOKENS" minOccurs="0"/>
+     </xs:sequence>
+   </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="proveedores">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="empresa" maxOccurs="unbounded"/>
+     </xs:sequence>
+   </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="empresa">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="reparto" maxOccurs="unbounded"/>
+     </xs:sequence>
+     <xs:attribute name="nombre" type="xs:string" use="required"/>
+   </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="reparto">
+    <xs:complexType>
+      <xs:attribute name="ref" type="tipoRef" use="required"/>
+      <xs:attribute name="fecha" type="xs:date" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  
+  <xs:element name="clientes">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="NIF" maxOccurs="unbounded"/>
+     </xs:sequence>
+   </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="NIF">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element name="nombreCompleto"/>
+       <xs:element name="telefono" type="xs:string" maxOccurs="unbounded"/>
+       <xs:element name="direccion" type="xs:string" minOccurs="0"/>
+       <xs:element ref="fechaNacimiento" minOccurs="0"/>
+       <xs:element name="genero" type="xs:string" minOccurs="0"/>
+     </xs:sequence>
+     <xs:attribute name="numero" type="tipoDNI"/>
+     <xs:attribute name="premium" type="tipoSiNo"/>
+   </xs:complexType> 
+  </xs:element>
+  
+  
+  <xs:element name="fechaNacimiento">
+      <xs:complexType>
+        <xs:attribute name="dia" type="xs:short"/>
+        <xs:attribute name="mes" type="xs:short"/>
+        <xs:attribute name="año" type="xs:short"/>
+      </xs:complexType>  
+  </xs:element>
+  
+  <xs:element name="accionistas">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="NIFa" maxOccurs="unbounded"/>
+       <xs:element ref="NIEa" maxOccurs="unbounded"/>
+     </xs:sequence>
+   </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="NIFa">
+    <xs:complexType>
+      <xs:attribute name="fechaUnión" type="xs:date"/>
+      <xs:attribute name="premium" type="tipoSiNo"/>
+      <xs:attribute name="num" type="tipoDNI"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="NIEa">
+    <xs:complexType>
+      <xs:attribute name="fechaUnión" type="xs:date"/>
+      <xs:attribute name="premium" type="tipoSiNo"/>
+      <xs:attribute name="num" type="tipoDNI"/>
+    </xs:complexType>
+  </xs:element>
+  
+  
+  
+  
+  
+  
+  
+<xs:simpleType name="tipoRef">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="r[0-9]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  
+  <xs:simpleType name="tipoSiNo">
+   <xs:restriction base="xs:string">
+     <xs:pattern value="Si|No"/>
+   </xs:restriction> 
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoDNI">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{8}[a-z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

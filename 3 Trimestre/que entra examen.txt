@@ -1,0 +1,9 @@
+elaboracion tabla html, haciendo schemas con apply-templates, con bucle foreach, y otro con xquery
+
+xml entrada hacer otro de salida con alguna modificacion(coger un atributo y convertirlo en el contenido de un elemento y alreves) SOLO con xquery
+
+no entra teoria, SOLO esos 2 ejercicios
+
+
+
+

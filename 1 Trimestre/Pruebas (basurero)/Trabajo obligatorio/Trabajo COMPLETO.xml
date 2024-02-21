@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mercadona [
+   <!ELEMENT mercadona (ubicacion+, accionistas)>
+   <!ELEMENT ubicacion (empleados*, proveedores*, clientes*)>
+   <!ATTLIST ubicacion ciudad CDATA #REQUIRED>
+     <!ELEMENT empleados (director, gerente, almacenista+, comercial+, dependiente+, limpieza+, repartidor*, cocinero*)>
+       <!ELEMENT director (#PCDATA)>
+       <!ELEMENT gerente (#PCDATA)>
+       <!ELEMENT almacenista (#PCDATA)>
+       <!ELEMENT comercial (#PCDATA)>
+       <!ELEMENT dependiente (#PCDATA)>
+       <!ELEMENT limpieza (#PCDATA)>
+       <!ELEMENT repartidor (#PCDATA)>
+       <!ELEMENT cocinero (#PCDATA)>
+     <!ELEMENT proveedores (empresa+)>
+       <!ELEMENT empresa (reparto*)>
+       <!ATTLIST empresa nombre CDATA #REQUIRED>
+         <!ELEMENT reparto EMPTY>
+         <!ATTLIST reparto 
+            idREF ID #REQUIRED
+            fecha CDATA #REQUIRED>
+     <!ELEMENT clientes (NIF+)>
+        <!ELEMENT NIF (nombreCompleto, telefono+, direccion?, fechaNacimiento?, genero?)>
+        <!ATTLIST NIF 
+          numero CDATA #REQUIRED
+          premium (Si | No) #REQUIRED>
+         <!ELEMENT nombreCompleto (#PCDATA)>
+         <!ELEMENT telefono (#PCDATA)>
+         <!ELEMENT direccion (#PCDATA)>
+         <!ELEMENT fechaNacimiento EMPTY>
+         <!ATTLIST fechaNacimiento
+         dia CDATA #IMPLIED
+          mes CDATA #IMPLIED
+          año CDATA #IMPLIED>
+         <!ELEMENT genero (#PCDATA)>
+   <!ELEMENT accionistas (NIFa*, NIEa*)>
+         <!ELEMENT NIFa (#PCDATA)>
+         <!ATTLIST NIFa 
+          fechaUnión CDATA #REQUIRED
+          premium (Si | No) #REQUIRED>
+         <!ELEMENT NIEa (#PCDATA)>
+         <!ATTLIST NIEa 
+          fechaUnión CDATA #REQUIRED
+          premium (Si | No) #REQUIRED>
+  ]>
+  
+  
+<mercadona>
+   <ubicacion ciudad="Vigo">
+     <empleados>
+       <director>Brais Dominguez</director>
+       <gerente>Mario Neta</gerente>
+       <almacenista>Jeff Perez</almacenista>
+       <almacenista>Pepe Perez</almacenista>
+       <almacenista>Manuel Gomez</almacenista>
+       <comercial>Zampa Teste</comercial>
+       <comercial>Carlos Jose Miguez</comercial>
+       <dependiente>Henry Mendez</dependiente>
+       <dependiente>Michael Jackson</dependiente>
+       <dependiente>Milito Lato</dependiente>
+       <limpieza>Tomás Cao</limpieza>
+       <repartidor>Fernando Alonso</repartidor>
+       <cocinero />
+     </empleados>
+     
+     <proveedores>
+       <empresa nombre="Comidas S.L.">
+         <reparto idREF="r45" fecha="15-01-2022"/>
+         <reparto idREF="r44" fecha="14-01-2022"/>
+         <reparto idREF="r41" fecha="13-01-2022"/>
+       </empresa>
+       <empresa nombre="Postres S.L.">
+         <reparto idREF="r56" fecha="15-01-2022"/>
+         </empresa>
+       <empresa nombre="Recalentados S.A.">
+         <reparto idREF="r66" fecha="15-01-2022"/>
+       </empresa>
+       <empresa nombre="Sobras Restaurantes S.C.">
+         <reparto idREF="r89" fecha="16-01-2022"/>
+       </empresa>
+       <empresa nombre="McDonals S.L.">
+         <reparto idREF="r99" fecha="29-01-2022"/>
+       </empresa>
+     </proveedores>
+     
+     <clientes>
+       <NIF numero="123125312s" premium="Si">
+         <nombreCompleto>Elsa Pato</nombreCompleto>
+         <telefono>622 33 44 55</telefono>
+         <telefono>642 33 74 54</telefono>
+         <direccion></direccion>
+         <fechaNacimiento dia="" mes="" año=""/>
+         <genero></genero>
+       </NIF>
+       <NIF numero="658975889m" premium="Si">
+         <nombreCompleto>Ana Tomia</nombreCompleto>
+         <telefono>655 55 55 50</telefono>
+         <direccion>Calle Lope de Vega 129 5º</direccion>
+         <fechaNacimiento dia="05" mes="12" año="1912"/>
+         <genero>Hombre</genero>
+       </NIF>
+     </clientes>
+   </ubicacion>
+   
+   
+   <ubicacion ciudad="Nigran">
+     <empleados>
+       <director>Luis Vilán</director>
+       <gerente>Ali Cate</gerente>
+       <almacenista>Elvis Tek</almacenista>
+       <almacenista>Eddy Ficio</almacenista>
+       <comercial>Lola Mento</comercial>
+       <dependiente>Aitor Menta</dependiente>
+       <dependiente>Aitor Tilla</dependiente>
+       <dependiente>Aitor Tazo</dependiente>
+       <limpieza>Marc Tillo</limpieza>
+     </empleados>
+     
+     <proveedores>
+       <empresa nombre="Merienda S.L.">
+         <reparto idREF="p233" fecha="19-05-2022"/>
+       </empresa>
+     </proveedores>
+     
+     <clientes>
+       <NIF numero="123125312s" premium="No">
+         <nombreCompleto>Kiko Matamoros</nombreCompleto>
+         <telefono>622 33 44 55</telefono>
+         <telefono>642 93 74 50</telefono>
+       </NIF>
+       <NIF numero="658975889m" premium="No">
+         <nombreCompleto>Andrés Tresado</nombreCompleto>
+         <telefono>634 34 43 55</telefono>
+         <direccion>Calle Garcia 12 5º</direccion>
+         <fechaNacimiento dia="05" mes="10" año="1972"/>
+         <genero>Hombre</genero>
+       </NIF>
+     </clientes>
+   </ubicacion>
+      
+   <accionistas>
+     <NIFa fechaUnión="11-10-2022" premium="Si">393939393v</NIFa>
+     <NIEa fechaUnión="11-10-2022" premium="Si">788589458o</NIEa>
+   </accionistas>
+</mercadona>

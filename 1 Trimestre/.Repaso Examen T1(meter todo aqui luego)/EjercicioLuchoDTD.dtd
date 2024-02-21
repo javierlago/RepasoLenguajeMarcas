@@ -1,0 +1,49 @@
+<!ELEMENT mercadona (ubicacion+, accionistas)>
+    <!ELEMENT ubicacion (empleados, proveedores, clientes)>
+    <!ATTLIST ubicacion
+        ciudad CDATA #REQUIRED
+        idUbicacion ID #REQUIRED>
+      <!ELEMENT empleados (director, gerente, almacenista+, comercial*, dependiente+, limpieza*, repartidor*, cocinero*)>
+        <!ELEMENT director (#PCDATA)>
+        <!ATTLIST director
+            refD IDREF #REQUIRED>
+        <!ELEMENT gerente (#PCDATA)>
+        <!ELEMENT almacenista (#PCDATA)>
+        <!ELEMENT comercial (#PCDATA)>
+        <!ELEMENT dependiente (#PCDATA)>
+        <!ELEMENT limpieza (#PCDATA)>
+        <!ELEMENT repartidor (#PCDATA)>
+        <!ELEMENT cocinero (#PCDATA)>
+      <!ELEMENT proveedores (empresa+)>
+        <!ELEMENT empresa (reparto*)>
+        <!ATTLIST empresa
+            nombre CDATA #REQUIRED>
+            <!ELEMENT reparto (EMPTY)*>
+            <!ATTLIST reparto
+               num CDATA #REQUIRED
+               fecha CDATA #REQUIRED>
+      <!ELEMENT clientes (NIF*)>
+        <!ELEMENT NIF (nombreCompleto, telefono+, direccion?, fechaNacimiento?, genero?)>
+        <!ATTLIST NIF
+          numero CDATA #REQUIRED
+          premium (Si|No) #REQUIRED>
+          <!ELEMENT nombreCompleto (#PCDATA)>
+          <!ELEMENT telefono (#PCDATA)>
+          <!ELEMENT direccion (#PCDATA)>
+          <!ELEMENT fechaNacimiento (#PCDATA)>
+          <!ATTLIST fechaNacimiento
+           dia CDATA #REQUIRED
+           mes CDATA #REQUIRED
+           año CDATA #REQUIRED>
+          <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT accionistas (NIFa*, NIEa*)>
+      <!ELEMENT NIFa EMPTY>
+      <!ATTLIST NIFa
+        fechaUnión CDATA #REQUIRED
+        premium CDATA #REQUIRED
+        num CDATA #REQUIRED>
+      <!ELEMENT NIEa EMPTY>
+      <!ATTLIST NIEa
+        fechaUnión CDATA #REQUIRED
+        premium CDATA #REQUIRED
+        num CDATA #REQUIRED>

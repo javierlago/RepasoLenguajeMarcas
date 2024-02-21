@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE edificio SYSTEM "Tarefa5a_DTD.dtd">
+ 
+ <edificio valor="" alquiler="falso">
+   <enderezo>
+      <rua>Asd</rua>
+      <numero>12</numero>
+      <poboacion>Vigo</poboacion>
+      <provincia>Pontevedra</provincia>
+      <codigoPostal>36207</codigoPostal>
+      </enderezo>
+    <dataConstrucion mes="Octubre" ano="2022"/>
+    <material>Si</material>
+ </edificio>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <libro>
+    <titulo>A Praia dos afogados</titulo>
+    <autor>Domingo Vilar</autor>autor>
+    <editorial>Galaxia</editorial>
+    <fechaPublicacion>2009</fechaPublicacion>
+    <isbn>5458789</isbn>
+  </libro>
+
+  <libro>
+    <titulo>El ultimo barco</titulo>
+    <autor>Domingo Vilar</autor>autor>
+    <editorial>Galaxia</editorial>
+    <fechaPublicacion>2009</fechaPublicacion>
+    <isbn>5458709</isbn>
+  </libro>
+
+  <libro>
+    <titulo>El bosque de los cuatro vientos</titulo>
+    <autor>Domingo Vilar</autor>autor>
+    <editorial>Galaxia</editorial>
+    <fechaPublicacion>2009</fechaPublicacion>
+    <isbn>5458689</isbn>
+  </libro>
+</biblioteca>

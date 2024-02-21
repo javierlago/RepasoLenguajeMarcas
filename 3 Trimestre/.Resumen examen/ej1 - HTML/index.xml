@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pruebaexamen>
+	<biblioteca nombre="Teis">
+		<libros>
+			<libro id="1">
+				<autor>Fabian L.C.</autor>
+				<nombre>Los cuentos de Beedle el Bardo</nombre>
+				<puntuacion>10</puntuacion>			
+			</libro>	
+			<libro id="2">
+				<autor>Messi F.C.</autor>
+				<nombre>Cuento la pulga</nombre>
+				<puntuacion>8</puntuacion>			
+			</libro>	
+			<libro id="3">
+				<autor>Brais D.P.</autor>
+				<nombre>Pirate Dream: The 1st edition</nombre>
+				<puntuacion>9</puntuacion>			
+			</libro>			
+		</libros>
+	</biblioteca>
+	<biblioteca nombre="A Guia">
+		<libros>
+			<libro id="1">
+				<autor>as L.C.</autor>
+				<nombre>s Bardo</nombre>
+				<puntuacion>5</puntuacion>			
+			</libro>	
+			<libro id="2">
+				<autor>erree F.C.</autor>
+				<nombre>c la pulga</nombre>
+				<puntuacion>5</puntuacion>			
+			</libro>	
+			<libro id="3">
+				<autor>asssdrd D.P.</autor>
+				<nombre>Pirate aas: The xxx edition</nombre>
+				<puntuacion>4</puntuacion>			
+			</libro>			
+		</libros>
+	</biblioteca>
+	<biblioteca nombre="Pussumuss">
+		<libros>
+			<libro id="1">
+				<autor>Mariaas .</autor>
+				<nombre>Juani</nombre>
+				<puntuacion>5</puntuacion>			
+			</libro>	
+			<libro id="2">
+				<autor>FS.</autor>
+				<nombre>Mordor</nombre>
+				<puntuacion>5</puntuacion>			
+			</libro>	
+			<libro id="3">
+				<autor>asssdrd D.P.</autor>
+				<nombre>Lucas edition</nombre>
+				<puntuacion>4</puntuacion>			
+			</libro>			
+		</libros>
+	</biblioteca>
+</pruebaexamen>

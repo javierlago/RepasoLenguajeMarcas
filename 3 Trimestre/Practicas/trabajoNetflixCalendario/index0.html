@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix by braisdp6</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagenes/netflixLogo.ico">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logoNetflix.png" alt="logoNetflix">
+        
+        <select id="paises" name="paises">
+            <option value="es">Idioma: Español</option>
+            <option value="es">Idioma: Inglés</option>
+            <option value="mx">Idioma: Francés</option>
+            <option value="ar">Idioma: Italiano</option>
+       </select>
+        <a href="#">
+            <div class="buttonRed">Iniciar sesión
+            </div>
+        </a>
+    </header>
+    <main>
+        <div id="preload-container">
+            <img src="imagenes/netflix-intro-netflix.gif" alt="netflix-intro-netflix" id="preload-gif">
+        </div>    
+        <script>
+            // Esperamos a que cargue la página completamente
+            window.onload = function() {
+                // Ocultamos la precarga después de 5 segundos
+                setTimeout(function() {
+                    document.getElementById('preload-container').style.display = 'none';
+                }, 6000);
+            }
+        </script>
+
+
+        <section id="section1">
+            <article>
+                <h1>Todas las películas<br> y series que desees,<br> y mucho más.</h1>
+                <h4>Disfruta donde quieras. Cancela cuando quieras.</h4>          
+            </article>
+            <form>
+              <label for="email">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</label>
+              <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+              <button type="submit">Empezar ></button>
+            </form>    
+        </section>
+        <section id="section2">
+            <article>
+                <div class="contenedor-izda">
+                    <h2>Disfruta de Netflix en tu TV.</h2>
+                    <p>Smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores Blu-ray y muchos más.</p> 
+                </div>
+                <img src="imagenes/preview1.png" alt="previewNetflix">   
+            </article>
+            <hr>
+            <article>
+                <div class="contenedor-derecha">
+                    <h2>Disfruta en todas partes.</h2>
+                    <p>Reproduce en streaming todas las películas y series en tu móvil, tableta, ordenador y TV sin pagar más.</p>
+                </div>
+                <img src="imagenes/preview2.png" alt="previewNetflix">
+            </article>
+            <hr>
+            <article>
+                <div class="contenedor-izda">
+                    <h2>Crea perfiles infantiles.</h2>
+                    <p>Deja que los niños vivan aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, gratis con tu suscripción.</p>
+                </div>
+                <img src="imagenes/preview3.png" alt="previewNetflix">
+            </article>
+            <hr>
+            <article>
+                <div class="contenedor-derecha">
+                    <h2>Descárgate tus series favoritas para verlas sin conexión.</h2>
+                    <p>Solo disponible en los planes sin anuncios.</p>
+                </div>
+                <img src="imagenes/preview4.png" alt="previewNetflix">
+            </article>
+        </section>
+        
+        <section id="section3">
+            <h2>Preguntas frecuentes</h2>
+            <article>
+                <h3>¿Qué es Netflix?</h3>
+                <p>Netflix es un servicio de streaming que ofrece una amplia variedad de series, películas, títulos de anime, documentales y otros contenidos premiados en miles de dispositivos conectados a internet.<br><br>
+                Puedes ver todo lo que quieras, cuando quieras, por una tarifa mensual reducida. ¡Siempre hay algo nuevo que descubrir, y cada semana se añaden nuevas series y películas!</p>
+            </article>
+            <article>
+                <h3>Cuanto cuesta Netflix?</h3>
+                <p>Disfruta de Netflix en tu smartphone, tableta, Smart TV, ordenador o dispositivo de streaming, todo por una tarifa mensual fija. Planes desde 5,49 € a 17,99 € al mes. Sin cargos adicionales ni contratos.</p>
+            </article>
+            <article>
+                <h3>¿Dónde puedo ver Netflix?</h3>
+                <p>Disfruta donde quieras y cuando quieras. Inicia sesión con tu cuenta de Netflix para disfrutar al instante de todo el contenido de netflix.com desde tu ordenador personal o en cualquier dispositivo conectado a internet que ofrezca la aplicación de Netflix, entre ellos, smart TV, smartphones, tabletas, reproductores multimedia de streaming y consolas de juegos. <br><br>
+                También puedes descargar tus series favoritas con la aplicación de iOS, Android o Windows 10. Utiliza las descargas para ver títulos dondequiera que vayas y cuando no dispongas de conexión a internet. Netflix siempre te acompaña.</p>
+            </article>
+            <article>
+                <h3>¿Cómo cancelo?</h3>
+                <p>Netflix es flexible. Sin contratos liosos ni compromisos. Puedes cancelar fácilmente tu cuenta en línea con tan solo dos clics. Sin cargos por cancelación: activa o cancela tu cuenta en cualquier momento.</p>
+            </article>
+            <article>
+                <h3>¿Qué puedo ver en Netflix?</h3>
+                <p>Netflix dispone de una amplia biblioteca de originales de Netflix galardonados, títulos de anime, series de TV, documentales, largometrajes y otros contenidos. Ve todo el contenido que quieras, cuando quieras.</p>
+            </article>
+            <article>
+                <h3>¿Es Netflix bueno para los niños?</h3>
+                <p>La experiencia infantil de Netflix se incluye en la suscripción para que los padres tengan el control mientras los niños disfrutan de series y películas familiares en su propio espacio.<br><br>
+                Los perfiles infantiles incluyen controles parentales protegidos por PIN que te permiten restringir la calificación por edades del contenido que pueden ver los niños y bloquear determinados títulos que no quieras que vean. </p>
+            </article>
+            <form>
+              <label for="email">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</label>
+              <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+              <button type="submit">Empezar ></button>
+            </form> 
+        </section>
+    </main>
+    <footer>
+        <p>¿Preguntas? Llama al 900-759-106</p>
+        <div>
+            <ul>
+                <li>Preguntas frecuentes</li>
+                <li>Inversores</li>
+                <li>Fromas de ver</li>
+                <li>Información corporativa</li>
+                <li>Avisos legales</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Centro de ayuda</li>
+                <li>Empleo</li>
+                <li>Términos de uso</li>
+                <li>Contáctanos</li>
+                <li>Solo en Netflix</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Cuenta</li>
+                <li>Canjear tarjetas regalo</li>
+                <li>Privacidad</li>
+                <li>Prueba de velocidad</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Zona de prensa</li>
+                <li>Comprar tarjetas regalo</li>
+                <li>Preferencias de cookies</li>
+                <li>Garantía legal</li>
+            </ul>   
+        </div>     
+        <select id="paises" name="paises">
+            <option value="es">Idioma: Español</option>
+            <option value="es">Idioma: Inglés</option>
+            <option value="mx">Idioma: Francés</option>
+            <option value="ar">Idioma: Italiano</option>
+        </select>
+        <div id="extraCalendario">
+            <a href="index.html">
+                Click here, to visit other jobs. <br>
+                All right reserved BraisDP6.
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

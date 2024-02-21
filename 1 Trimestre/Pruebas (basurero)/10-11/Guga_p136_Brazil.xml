@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pelicula
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Guga_p136_SchemaBrazil.xsd"
+    titulo="Brazil" minutos="124">
+<director>Querri cohuele</director>
+<protagonista>Joni Melavo</protagonista>
+<reparto>
+   <interprete>Sonrisas y lagrimas</interprete>
+   <interprete>Sonrisas y lagrimas 2</interprete>
+</reparto>
+</pelicula>

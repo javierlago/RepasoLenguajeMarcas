@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Acme";
+    src: url(/fonts/Acme-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/RobotoSlab-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "sans-serif";
+    src: url(/fonts/RobotoSlab-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(/fonts/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(/fonts/Roboto-Medium.ttf) format("truetype");
+}
+
+
+*{
+    color: aliceblue;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+}
+
+html{
+    background-color: rgb(0, 0, 0);
+    min-height: 56.25rem;
+    background-image: linear-gradient(0deg, rgba(0, 3, 20, 0.7), rgba(0, 8, 29, 0.7)),url(https://assets.nflxext.com/ffe/siteui/vlv3/efb4855d-e702-43e5-9997-bba0154152e0/1844f11c-1c2c-453b-80d4-2287d580c455/ES-es-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+html::after{
+    background-image: url(/imagenes/netflix-intro-netflix.gif);
+    animation-delay: 5s;
+}
+
+/* Estilos para el contenedor de la precarga */
+#preload-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+/* Estilos para el GIF animado */
+#preload-gif {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+    margin: 0 3%;
+}
+header{
+    margin: 16px 0;
+}
+header img{
+    margin-right: 70%;   
+}
+select, input{
+    padding: 6px;
+    background: transparent;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 5px;
+}
+header select{
+    float: inline-end;
+    margin-top: 15px; 
+}
+
+.buttonRed{
+    display: inline;
+    float: inline-end;
+    padding: 6px 12px;
+    background-color: rgb(226, 0, 0);
+    border-radius: 5px;
+    font-family: "Roboto-Bold";
+    transition: 0.5s ease;
+}
+
+a{    
+    text-decoration: none;
+}
+
+header .buttonRed{
+    margin: 15px 0 0 10px;
+}
+
+.buttonRed:hover{
+    background-color: rgb(172, 0, 0);
+    transition: background-color .5s;
+}
+
+h1{
+    font-size: 5em;
+    font-family: "Roboto-Bold";
+}
+h1:hover{
+    text-shadow: 0 0.1em 0.5em rgb(153, 3, 3);
+    color: white;
+}
+
+h4{
+    font-size: 1.5em;
+    font-family: "Roboto-Bold";
+}
+
+#section1 article{
+    padding: 15px 30% 0 4%;
+}
+
+#section1 form{
+    padding: 2em;
+    margin: 0 0 0 4%;
+    border-radius: 8px;
+    border: 4px solid rgb(211, 10, 10);
+    background-color: rgba(0, 3, 36, 0.726);    
+}
+
+#section1 form label{
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.5em;    
+}
+
+input{
+    font-size: 1.5em;
+    font-family: "sans-serif";
+    padding: 9.25px;
+    margin-right: 0.2em;
+}
+
+button{
+    padding: 6px 12px;
+    background-color: rgb(226, 0, 0);
+    font-size: 2em;
+    border-radius: 5px;
+    font-family: "sans-serif";
+    border: transparent;
+}
+
+#section2{
+    display: block;
+    background-color: rgb(0, 1, 39);
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 4em;
+    padding: 2em 1.5em;
+}
+
+#section2 article{
+    display: block;
+}
+
+.contenedor-izda{
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 600px;
+    padding: 125px;
+}
+.contenedor-derecha{
+    display: inline-block;
+    float: right;
+    height: 200px;
+    width: 600px;
+    padding: 125px;
+}
+h2{
+    font-size: 3em;
+    font-family: "Roboto-Bold";
+}
+.contenedor-izda p, .contenedor-derecha p {
+    font-size: 1.5em;    
+}
+#section2 article img{
+    display: block;
+    float: right;
+    width: 40%;
+}
+hr{
+    text-align: center;
+    width: 90%;
+}
+
+#section3{
+    padding: 7em;
+}
+
+#section3 h2{
+    margin-top: 11em;
+}
+
+#section3 article{
+    background-color: rgba(19, 33, 68, 1);
+    padding: 1em;
+    margin-bottom: 1em;    
+    transition: 0.5s ease;
+}
+#section3 article:hover{
+    background-color: rgb(34, 62, 133);
+    padding: 1.5em;
+    margin-bottom: 1.2em;    
+    transition: 0.5s ease;
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: "Roboto-Bold";
+}
+
+form label{
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.5em;    
+}
+
+footer{    
+    padding: 0 7em 20em 7em;
+    display: block;
+}
+
+footer div{
+    float: left;
+    margin: auto;
+}
+
+footer select{
+    display: block;
+    float: right;
+    margin-bottom: 10em;
+}
+
+#extraCalendario{
+    color: #000;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+#extraCalendario a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+#extraCalendario a:hover{
+    text-shadow: 0 0.1em 1em rgb(255, 255, 255);
+    color: rgb(0, 255, 242);
+    transition: 0.5s ease;
+    text-align: center;
+}

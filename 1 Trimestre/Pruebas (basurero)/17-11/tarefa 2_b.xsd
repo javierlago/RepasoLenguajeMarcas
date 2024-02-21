@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+   <element name="modulo">
+     <complexType>
+       <sequence>
+         <element name="duracion">
+           <complexType>
+               <attribute name="horas" type="unsignedByte" use="required"/>
+               <attribute name="sesions" type="unsignedByte"/>
+               <attribute name="sesionsSemanais" type="unsignedByte" use="required"/>
+           </complexType>
+         </element>
+         
+         <element name="nome" type="string" use="required"/>
+         <element name="ciclo" maxOccurs="unbounded">
+           <complexType>
+             <simpleContent>
+               <extension base="string">
+                 <attribute name="codigo" type="string" use="required"/>
+               </extension>
+             </simpleContent>
+           </complexType>
+         </element>
+         
+         <element name="contidos">
+           <complexType>
+             <sequence>
+             
+               <element name="UD">
+                 <complexType>
+                   <sequence>
+                     <element name="titulo" type="string"/>
+                     <element name="descrición" type="string" minOccurs="0"/>
+                   </sequence>
+                   <attribute name="num" type="unsignedByte" use="required"/>
+                   <attribute name="sesións" type="unsignedByte" use="required"/>
+                 </complexType>
+               </element>
+               
+             </sequence>
+           </complexType>
+         </element>
+         
+       </sequence>
+       
+       <attribute name="codigo" type="string" use="required"/>
+     </complexType>
+   </element>
+   
+</schema>

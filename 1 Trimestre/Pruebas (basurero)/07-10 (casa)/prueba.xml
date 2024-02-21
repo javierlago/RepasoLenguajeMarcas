@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cartelera>
+    <pelicula categoria="Romance">
+        <nombre>La Casa Embrujada</nombre>
+        <actor>Robin Williams</actor>
+        <año>1999</año>
+    </pelicula>
+    <pelicula categoria="Romance">
+        <nombre>Las Casas Embrujadas 2</nombre>
+        <actor>Robin Williams</actor>
+        <año>2001</año>
+    </pelicula>
+</cartelera>

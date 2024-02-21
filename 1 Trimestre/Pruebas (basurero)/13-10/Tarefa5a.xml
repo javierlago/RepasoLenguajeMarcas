@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding ="UTF-8"?>
+<!DOCTYPE edificio [
+<!ELEMENT edificio (enderezo, dataConstrucion, material?)>
+ <!ELEMENT enderezo (rua, numero, poboacion, provincia, codigoPostal)>
+ <!ELEMENT rua (#PCDATA)>
+ <!ELEMENT numero (#PCDATA)>
+ <!ELEMENT poboacion (#PCDATA)>
+ <!ELEMENT provincia (#PCDATA)>
+ <!ELEMENT codigoPostal (#PCDATA)>
+ <!ELEMENT dataConstrucion EMPTY>
+ <!ATTLIST dataConstrucion
+ mes CDATA #REQUIRED
+ ano CDATA #REQUIRED>
+ <!ELEMENT material (#PCDATA)>
+ <!ATTLIST edificio
+ valor CDATA #IMPLIED
+ alquiler (verdadeiro|falso) #REQUIRED>
+ ]>
+ 
+ <edificio valor="1000000€" alquiler="falso"> 
+    <enderezo>
+      <rua>Calle Manuel</rua>
+      <numero>12</numero>
+      <poboacion>Vigo</poboacion>
+      <provincia>Pontevedra</provincia>
+      <codigoPostal>30207</codigoPostal>
+    </enderezo>
+    <dataConstrucion mes="Octubre" ano="2000"></dataConstrucion>
+    <material>Piedra</material>
+ </edificio>
+ 

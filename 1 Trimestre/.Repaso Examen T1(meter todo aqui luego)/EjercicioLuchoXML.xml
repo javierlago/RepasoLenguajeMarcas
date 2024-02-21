@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Brais Dominguez Puga y Luciano Yamil Martínez Castro-->
+<!--VERSION SCHEMA<mercadona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Trabajo_esquema.xsd"> -->
+<!DOCTYPE mercadona SYSTEM "EjercicioLuchoDTD.dtd">
+<!--DATOS-->
+<mercadona>
+   <ubicacion ciudad="Vigo" idUbicacion="u1">
+     <empleados>
+       <director refD="u1">Brais Dominguez</director>
+       <gerente>Mario Neta</gerente>
+       <almacenista>Jeff Perez</almacenista>
+       <almacenista>Pepe Perez</almacenista>
+       <almacenista>Manuel Gomez</almacenista>
+       <comercial>Zampa Teste</comercial>
+       <comercial>Carlos Jose Miguez</comercial>
+       <dependiente>Henry Mendez</dependiente>
+       <dependiente>Michael Jackson</dependiente>
+       <dependiente>Milito Lato</dependiente>
+       <limpieza>Tomás Cao</limpieza>
+       <repartidor>Fernando Alonso</repartidor>
+       <cocinero>Yamil Martinez</cocinero>
+     </empleados>
+     
+     <proveedores>
+       <empresa nombre="Comidas S.L.">
+         <reparto num="r45" fecha="2022-01-15"/>
+         <reparto num="r44" fecha="2022-01-14"/>
+         <reparto num="r41" fecha="2022-01-13"/>
+       </empresa>
+       <empresa nombre="Postres S.L.">
+         <reparto num="r56" fecha="2022-01-15"/>
+         </empresa>
+       <empresa nombre="Recalentados S.A.">
+         <reparto num="r66" fecha="2022-01-15"/>
+       </empresa>
+       <empresa nombre="Sobras Restaurantes S.C.">
+         <reparto num="r89" fecha="2022-01-16"/>
+       </empresa>
+       <empresa nombre="McDonals S.L.">
+         <reparto num="r99" fecha="2022-01-29"/>
+       </empresa>
+     </proveedores>
+     
+     <clientes>
+       <NIF numero="12312531s" premium="Si">
+         <nombreCompleto>Elsa Pato</nombreCompleto>
+         <telefono>622 33 44 55</telefono>
+         <telefono>642 33 74 54</telefono>
+         <direccion></direccion>
+       </NIF>
+       <NIF numero="65897589m" premium="Si">
+         <nombreCompleto>Ana Tomia</nombreCompleto>
+         <telefono>655 55 55 50</telefono>
+         <direccion>Calle Lope de Vega 129 5º</direccion>
+         <fechaNacimiento dia="05" mes="12" año="1912"/>
+         <genero>Hombre</genero>
+       </NIF>
+     </clientes>
+   </ubicacion>
+   
+   
+   <ubicacion ciudad="Nigran" idUbicacion="u2">
+   
+     <empleados>
+       <director refD="u2">Luis Vilán</director>
+       <gerente>Ali Cate</gerente>
+       <almacenista>Elvis Tek</almacenista>
+       <almacenista>Eddy Ficio</almacenista>
+       <comercial>Lola Mento</comercial>
+       <dependiente>Aitor Menta</dependiente>
+       <dependiente>Aitor Tilla</dependiente>
+       <dependiente>Aitor Tazo</dependiente>
+       <limpieza>Marc Tillo</limpieza>
+     </empleados>
+     
+     <proveedores>
+       <empresa nombre="Merienda S.L.">
+         <reparto num="r233" fecha="2022-05-22"/>
+       </empresa>
+     </proveedores>
+     
+     <clientes>
+       <NIF numero="12312512s" premium="No">
+         <nombreCompleto>Kiko Matamoros</nombreCompleto>
+         <telefono>622 33 44 55</telefono>
+         <telefono>642 93 74 50</telefono>
+       </NIF>
+       <NIF numero="65897889m" premium="No">
+         <nombreCompleto>Andrés Tresado</nombreCompleto>
+         <telefono>634 34 43 55</telefono>
+         <direccion>Calle Garcia 12 5º</direccion>
+         <fechaNacimiento dia="05" mes="10" año="1972"/>
+         <genero>Hombre</genero>
+       </NIF>
+     </clientes>
+   </ubicacion>
+      
+   <accionistas>
+     <NIFa fechaUnión="2022-10-11" premium="Si" num="39493333e"/>
+     <NIEa fechaUnión="2022-10-11" premium="Si" num="39493313e"/>
+   </accionistas>
+</mercadona>

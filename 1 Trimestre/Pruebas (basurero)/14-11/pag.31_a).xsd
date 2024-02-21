@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"> 
+ <element name="Ciclo">  
+ 
+    <complexType>
+      <sequence>
+         <element name="Nome" type="string" minOccurs="1" maxOccurs="1"/>
+         <element name="Modulo" type="string" minOccurs="1" maxOccurs="unbounded"/>
+      </sequence>
+    <attribute name="familia" type="string"/>
+    <attribute name="tipo" type="string"/>  
+    </complexType>
+  </element>  
+  
+</schema>
